@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header p{
+    background-color: #D1891C;
+    padding-left: 20px;
+}
+
+h1{
+    background-color: #00669F;
+    color: white;
+    height: 45px;
+    font-weight: 300;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+article{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* width: 300px; */
+    margin: 20px;
+    max-width: 300px;
+    height: 527px;
+    border-radius: 5px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.like{
+    position: absolute;
+    top:1.25%;
+    left: 1.25%;
+    height: 24px;
+    width: 28px;
+    /* z-index: 1; */
+}
+
+.img-fondo{
+    /* position: absolute; */
+    width: 100%;
+    /* z-index: 0; */
+    border-radius: 5px 5px 0 0;
+}
+
+.avatar{
+    position: absolute;
+    height: 118px;
+    width: 120px;
+    left: 30%;
+    top: 21%;
+    border-radius: 50%;
+}
+
+article h2{
+    position: absolute;
+    top: 45%;
+    /* left: 25%; */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+article p{
+    position: absolute;
+    width: 250px;
+    top: 53%;
+    left: 8%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+article footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+article button{
+    border: none;
+    height: 45px;
+    width: 145px;
+    background-color: #00669F;
+    color:white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+
+.despedida{
+    background-color: #00669F;
+    height: 110px;
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.despedida p{
+    margin-top: 1.5rem;
+}
+
+.despedida img{
+    width: 7rem;
+    margin: 5px;
+}
+
+/* PARA ESCRITORIO */
+ @media (min-width:775px) {
+ section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+}
